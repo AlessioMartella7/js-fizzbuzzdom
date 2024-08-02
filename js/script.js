@@ -35,10 +35,17 @@ for(let i = 1; i <=100; i++) {
 //2 - isoliamo i multipli di 3 e stampiamo al suo posto fizz   
     if(i % 3 === 0) {
         
-        console.log('fizz')
+        console.log('Fizz')
 
-    } else if (i !== 3) {
+    } else if (i !== 3 && i !== 5) {
         console.log(i);
     }
+
+//3- isoliamo i multipli di 5 e stampiamo al suo posto Buzz.
+    if(i % 5 === 0) {
+    console.log('Buzz')
+    } 
+
+    
 
 }
