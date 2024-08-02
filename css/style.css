@@ -9,6 +9,15 @@
 
 body{
     font-family:'Rubik Mono One', sans-serif;
+    background-color: darkslateblue;
+}
+
+h1 {
+    margin: 30px 0;
+    text-align: center;
+    font-weight: 800;
+    font-size: 4rem;
+    color: cornflowerblue;
 }
 
 /* Utilities */
@@ -17,3 +26,15 @@ body{
     max-width: 1000px;
     margin: 0 auto;
 }
+
+.col {
+    height: 100px;
+    border-radius: 20px;
+    border:1px solid black;
+    box-shadow: inset 1px 1px 20px #000;
+    text-shadow: 1px 1px 3px #fff;
+    justify-content: center;
+    align-items: center;
+    
+}
+

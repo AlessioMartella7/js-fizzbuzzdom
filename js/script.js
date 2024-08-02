@@ -30,6 +30,7 @@ Come abbiamo visto ci sono usare varie tecniche (style , className, classList
 
 //1 - creiamo un contenitore nel DOM e importiamolo in JS.
 const board = document.getElementById('board')
+board.classList.add('row','row-cols-6','justify-content-center','text-center','gap-5')
 
 //2 - creiamo una variabile d'appoggio per i dati da stampare in pagina.
 let varia=0;
@@ -43,23 +44,23 @@ for(let i = 1; i <=100; i++) {
     if(i % 3 === 0 &&  i % 5 === 0) {
     console.log('FizzBuzz');
     varia = "FizzBuzz";
-    board.innerHTML +=`<div class="">${varia}</div>`;
+    board.innerHTML +=`<div class="col d-flex bg-primary fs-5">${varia}</div>`;
 
 //5 - isoliamo i multipli di 3 e stampiamo al suo posto Fizz
     }else if(i % 3 === 0){
         console.log('Fizz');
         varia = 'Fizz';
-        board.innerHTML +=`<div class="">${varia}</div>`;
+        board.innerHTML +=`<div class="col d-flex bg-info fs-5">${varia}</div>`;
 
 //6 - isoliamo i multipli di 5 e stampiamo al suo posto Buzz
     }else if(i % 5 === 0){
         console.log('Buzz');
         varia = 'Buzz';
-        board.innerHTML +=`<div class="">${varia}</div>`;
+        board.innerHTML +=`<div class="col d-flex bg-warning fs-5">${varia}</div>`;
 
     }else{
         console.log(i);
-        board.innerHTML +=`<div class="">${varia}</div>`;
+        board.innerHTML +=`<div class="col d-flex bg-success fs-5">${varia}</div>`;
 
 
     }
