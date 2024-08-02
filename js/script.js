@@ -29,6 +29,16 @@ Come abbiamo visto ci sono usare varie tecniche (style , className, classList
 
 //1 - scriviamo un ciclo "for" che stampi i numeri da 1 a 100 in console.
 
+
 for(let i = 1; i <=100; i++) {
-    console.log(i);
+
+//2 - isoliamo i multipli di 3 e stampiamo al suo posto fizz   
+    if(i % 3 === 0) {
+        
+        console.log('fizz')
+
+    } else if (i !== 3) {
+        console.log(i);
+    }
+
 }
