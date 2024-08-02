@@ -29,23 +29,31 @@ Come abbiamo visto ci sono usare varie tecniche (style , className, classList
 
 //1 - scriviamo un ciclo "for" che stampi i numeri da 1 a 100 in console.
 
-
 for(let i = 1; i <=100; i++) {
 
 //2 - isoliamo i multipli di 3 e stampiamo al suo posto fizz   
-    if(i % 3 === 0) {
-        
-        console.log('Fizz')
 
-    } else if (i !== 3 && i !== 5) {
-        console.log(i);
+    if((i % 3 === 0) && !(i % 3 === 0 && i % 5 === 0)) {
+    console.log('Fizz')
     }
 
 //3- isoliamo i multipli di 5 e stampiamo al suo posto Buzz.
-    if(i % 5 === 0) {
+
+    if((i % 5 === 0) && !(i % 3 === 0 && i % 5 === 0)) {
     console.log('Buzz')
-    } 
+    }  
+    
+//4- isoliamo i multipli sia di 3 che di 5 e stampiamo al loro posto FizzBuzz.
+    
+    if(i % 3 === 0 && i % 5 === 0) {
+        console.log('FizzBuzz')
+    }
+
+    else if (i !== 3 && i !== 5 && !(i % 3 === 0 || i % 5 === 0) ) {
+        console.log(i);
+    }
 
     
+
 
 }
